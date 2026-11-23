@@ -6,8 +6,7 @@ export default function ArticleCard({ a }) {
   return (
     <Link href={`/cam-nang/${a.slug}`} className="acard">
       <div className={`acard-cover cv-${a.cat}`}>
-        <Icon name={a.icon} size={44} />
-        <span className="mark">{a.mark}</span>
+        {a.cover ? <img src={a.cover} alt="" loading="lazy" /> : <><Icon name={a.icon} size={44} /><span className="mark">{a.mark}</span></>}
       </div>
       <div className="acard-body">
         <span className="eyebrow">{ARTICLE_CATS[a.cat]}</span>

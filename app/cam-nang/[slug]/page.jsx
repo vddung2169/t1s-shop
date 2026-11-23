@@ -24,7 +24,7 @@ export default function ArticlePage({ params }) {
         <span className="eyebrow">{ARTICLE_CATS[a.cat]}</span>
         <h1>{a.title}</h1>
         <p className="meta">{a.date} · {a.read} phút đọc</p>
-        <div className={`article-cover cv-${a.cat}`}><Icon name={a.icon} size={72} /><span className="mark">{a.mark}</span></div>
+        <div className={`article-cover cv-${a.cat}`}>{a.cover ? <img src={a.cover} alt={a.title} /> : <><Icon name={a.icon} size={72} /><span className="mark">{a.mark}</span></>}</div>
         <div className="prose" dangerouslySetInnerHTML={{ __html: a.body }} />
       </article>
       <section className="sec">

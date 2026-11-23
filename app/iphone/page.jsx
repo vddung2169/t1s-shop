@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import ProductBrowser from '@/components/ProductBrowser';
 
-export const metadata = { title: 'iPhone Lock & Quốc tế' };
+export const metadata = { title: 'iPhone iPad TPHCM' };
 
 export default function IphonePage({ searchParams }) {
   const loai = ['lock', 'quoc-te'].includes(searchParams?.loai) ? searchParams.loai : 'all';

@@ -1,5 +1,6 @@
 // Cẩm nang & tin tức. Nội dung viết bằng HTML đơn giản (p, h2, ul, ol, table, .tip).
 // Thêm bài mới: copy một khối { ... }, đổi slug (không dấu, nối bằng gạch ngang).
+// cover: ảnh bìa trong thư mục public/ (khổ ngang 16:9, ví dụ 1600x900). Bỏ trống thì hiện biểu tượng.
 
 export const ARTICLE_CATS = {
   'cam-nang': 'Cẩm nang',
@@ -9,6 +10,7 @@ export const ARTICLE_CATS = {
 
 export const ARTICLES = [
   {
+    cover: '/cam-nang/so-sanh-iphone-lock-vs-quoc-te.svg',
     slug: 'so-sanh-iphone-lock-vs-quoc-te', cat: 'cam-nang', date: '20/11/2026', read: 5, icon: 'swap', mark: 'Lock / QT',
     title: 'So sánh iPhone Lock và Quốc tế: nên mua loại nào?',
     excerpt: 'Lock rẻ hơn vài triệu nhưng cần sim ghép. Bảng so sánh nhanh để chọn đúng máy.',
@@ -24,6 +26,7 @@ export const ARTICLES = [
 <h2>Nên chọn loại nào?</h2><ul><li>Chọn <b>Quốc tế</b> nếu bạn dùng lâu dài, hay đi nước ngoài, hoặc muốn bán lại sau 1–2 năm.</li><li>Chọn <b>Lock</b> nếu muốn máy đời cao với ngân sách thấp hơn. Ở T1s, máy Lock được fix sim trọn đời, kể cả sau khi cập nhật iOS.</li></ul>`,
   },
   {
+    cover: '/cam-nang/kiem-tra-iphone-cu.svg',
     slug: 'kiem-tra-iphone-cu', cat: 'meo', date: '18/11/2026', read: 6, icon: 'shield', mark: '7 bước',
     title: '7 bước kiểm tra iPhone cũ trước khi mua',
     excerpt: 'Tự kiểm IMEI, iCloud, pin, Face ID và lịch sử linh kiện trong 10 phút.',
@@ -38,6 +41,7 @@ export const ARTICLES = [
 <p class="tip">Ở T1s, iCloud, MDM và pin được kiểm trước khi giao. Bạn vẫn được tự kiểm lại thoải mái rồi mới thanh toán.</p>`,
   },
   {
+    cover: '/cam-nang/ipad-lock-la-gi.svg',
     slug: 'ipad-lock-la-gi', cat: 'cam-nang', date: '15/11/2026', read: 4, icon: 'tablet', mark: 'Cellular',
     title: 'iPad Lock là gì? Khác gì iPad Wi‑Fi và bản Cellular',
     excerpt: 'Hiểu đúng 3 loại iPad trước khi mua: Wi‑Fi, Cellular quốc tế và Cellular bị khoá mạng.',
@@ -47,6 +51,7 @@ export const ARTICLES = [
 <p class="tip">Nhiều iPad Cellular giá rất mềm vì nhu cầu chủ yếu là dùng Wi‑Fi. Shop ghi rõ "Chỉ Wi‑Fi" hay "Wi‑Fi + Cellular" ở từng máy.</p>`,
   },
   {
+    cover: '/cam-nang/chon-dong-ipad-phu-hop.svg',
     slug: 'chon-dong-ipad-phu-hop', cat: 'cam-nang', date: '12/11/2026', read: 6, icon: 'tablet', mark: 'Pro · Air',
     title: 'Nên mua iPad dòng nào? So sánh iPad Pro, Air và Gen',
     excerpt: 'Chọn theo nhu cầu học tập, vẽ, giải trí và ngân sách.',
@@ -58,12 +63,14 @@ export const ARTICLES = [
 <h2>Mẹo chọn nhanh</h2><ul><li>Cần màn mượt để vẽ: chọn dòng Pro (120Hz).</li><li>Cần nhẹ, gọn, pin tốt: chọn Air.</li><li>Chỉ xem phim, học online: dòng Gen là đủ.</li></ul>`,
   },
   {
+    cover: '/cam-nang/chon-dung-luong-ipad.svg',
     slug: 'chon-dung-luong-ipad', cat: 'meo', date: '10/11/2026', read: 3, icon: 'box', mark: '64GB',
     title: 'Mua iPad nên chọn dung lượng bao nhiêu? 32GB, 64GB hay 256GB',
     excerpt: 'Tính nhanh dung lượng theo cách bạn dùng máy.',
     body: `<ul><li><b>32GB:</b> đủ cho học online, đọc sách, xem phim trực tuyến. Không nên cài nhiều game.</li><li><b>64GB:</b> hợp đa số học sinh, sinh viên, ghi chú và tài liệu PDF.</li><li><b>128GB:</b> vẽ, chỉnh ảnh, lưu tài liệu nhiều.</li><li><b>256GB trở lên:</b> quay dựng video, lưu nhiều file vẽ, chơi game nặng.</li></ul><p class="tip">iPad không lắp thẻ nhớ, nên chọn dư một bậc nếu bạn định dùng trên 3 năm.</p>`,
   },
   {
+    cover: '/cam-nang/apple-pencil-cho-ipad.svg',
     slug: 'apple-pencil-cho-ipad', cat: 'meo', date: '06/11/2026', read: 3, icon: 'pen', mark: 'Pencil',
     title: 'Apple Pencil 1 hay 2? Chọn đúng bút cho iPad của bạn',
     excerpt: 'Mỗi đời iPad chỉ hỗ trợ một số loại bút. Bảng tra nhanh.',
@@ -75,6 +82,7 @@ export const ARTICLES = [
 <p class="tip">Thông số "Bút hỗ trợ" của từng máy được ghi trong trang chi tiết sản phẩm.</p>`,
   },
   {
+    cover: '/cam-nang/kiem-tra-icloud-activation-lock-ipad.svg',
     slug: 'kiem-tra-icloud-activation-lock-ipad', cat: 'meo', date: '03/11/2026', read: 4, icon: 'lock', mark: 'iCloud',
     title: 'Cách kiểm tra iCloud ẩn, Activation Lock và MDM trên iPad cũ',
     excerpt: 'Ba thứ cần kiểm trước khi trả tiền một chiếc iPad cũ.',
@@ -84,12 +92,14 @@ export const ARTICLES = [
 <p class="tip">T1s kiểm iCloud và MDM cho mọi iPad trước khi giao.</p>`,
   },
   {
+    cover: '/cam-nang/tinh-trang-pin-iphone.svg',
     slug: 'tinh-trang-pin-iphone', cat: 'meo', date: '30/10/2026', read: 3, icon: 'battery', mark: '85%',
     title: 'Pin iPhone còn 85% có nên mua không?',
     excerpt: 'Hiểu đúng con số tình trạng pin và khi nào cần thay.',
     body: `<ul><li><b>95–100%:</b> gần như mới.</li><li><b>85–94%:</b> dùng thoải mái một ngày với nhu cầu bình thường.</li><li><b>80–84%:</b> vẫn ổn, nên tính trước chi phí thay pin.</li><li><b>Dưới 80%:</b> iOS sẽ khuyên thay pin.</li></ul><p>Trên iPhone 15 trở lên, xem thêm số chu kỳ sạc trong <code>Cài đặt › Pin › Tình trạng pin</code>.</p>`,
   },
   {
+    cover: '/cam-nang/t1s-shop-chinh-thuc-mo-cua.svg',
     slug: 't1s-shop-chinh-thuc-mo-cua', cat: 'tin-tuc', date: '22/11/2026', read: 2, icon: 'store', mark: 'T1s',
     title: 'T1s Shop mở cửa tại 265 Đường số 5, P. An Lạc',
     excerpt: 'Ghé xem máy trực tiếp, kiểm tra thoải mái trước khi mua.',
