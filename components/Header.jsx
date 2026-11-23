@@ -42,7 +42,7 @@ export default function Header() {
         <div className="wrap head-row">
           <Link href="/" className="brand" aria-label="T1s Shop, về trang chủ">
             <span className="brand-tile"><img src="/logo.svg" alt="" width="40" height="38" /></span>
-            <span className="brand-text">{SHOP.name}<small>{SHOP.tagline}</small></span>
+            <span className="brand-text">T1s<small>{SHOP.tagline}</small></span>
           </Link>
 
           <form className="search" onSubmit={submit} role="search">

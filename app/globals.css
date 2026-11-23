@@ -427,3 +427,65 @@ body::after {
 @media (min-width: 1500px) and (max-height: 640px) { .side-ad .sa-art { display: none; } }
 @keyframes sa-float { 50% { transform: translateY(-6px); } }
 @media (prefers-reduced-motion: reduce) { .sa-art svg { animation: none; } }
+
+/* ===== Bảng màu chính: bạc / vàng gold / đen (ghi đè bảng màu đỏ đen phía trên, áp cho toàn bộ web) ===== */
+:root {
+  --bg: #0B0B0D;
+  --surface: #141417;
+  --sunk: #1C1C20;
+  --ink: #ECECEE;
+  --muted: #A1A1A8;
+  --line: #2A2A2F;
+  --red: #D6B46E;            /* điểm nhấn chính: vàng champagne */
+  --red-ink: #121212;
+  --red-soft: rgba(214, 180, 110, .12);
+  --graphite: #060607;
+  --on-graphite: #E8E8EA;
+  --on-graphite-muted: #9A9AA1;
+  --green: #C9CCD3;          /* dấu tick: bạc */
+  --green-soft: rgba(201, 204, 211, .10);
+  --amber: #E2C383;
+  --amber-soft: rgba(226, 195, 131, .12);
+  --gold-grad: linear-gradient(135deg, #F3DFA6 0%, #D6B46E 45%, #A9853F 100%);
+  --silver-grad: linear-gradient(135deg, #F4F5F7 0%, #BFC3CA 50%, #8E939C 100%);
+  --shadow: 0 1px 2px rgba(0, 0, 0, .5), 0 14px 40px rgba(0, 0, 0, .45);
+  --glow-a: rgba(214, 180, 110, .10);
+  --glow-b: rgba(190, 196, 206, .07);
+  --glow-c: rgba(214, 180, 110, .05);
+  color-scheme: dark;
+}
+:root .site-head .head-top { border-bottom: 1px solid rgba(214, 180, 110, .25); }
+:root .head-nav { background: rgba(14, 14, 16, .92); backdrop-filter: blur(8px); }
+:root .brand-tile { background: #111; box-shadow: inset 0 0 0 1px rgba(214, 180, 110, .45); }
+:root .btn-red,
+:root .head-call,
+:root .cb-call,
+:root .ticket-save,
+:root .stamp,
+:root .sa-eyebrow,
+:root .sa-cta { background: var(--gold-grad); color: #141414; box-shadow: 0 6px 20px rgba(214, 180, 110, .18); }
+:root .btn-line { border-color: #BFC3CA; color: #E8E8EA; }
+:root .btn-line:hover { background: var(--silver-grad); color: #111; border-color: transparent; }
+:root .hero h1 em,
+:root .step .n,
+:root .ticket-save b { background: var(--gold-grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+:root .ticket-save b { background: none; color: #141414; }
+:root .hero h1 { background: var(--silver-grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+:root .hero h1 em { -webkit-text-fill-color: transparent; }
+:root .eyebrow { color: #C9A962; }
+:root .ticket,
+:root .cat,
+:root .pcard,
+:root .acard,
+:root .step,
+:root .store,
+:root .compare { border-color: rgba(214, 180, 110, .18); }
+:root .cat:hover,
+:root .pcard:hover { border-color: rgba(214, 180, 110, .55); }
+:root .pcard-art { background: radial-gradient(circle at 50% 35%, #26262B 0%, #141417 70%); }
+:root .band { background: linear-gradient(90deg, #070708, #141416 50%, #070708); border-block: 1px solid rgba(214, 180, 110, .25); }
+:root .site-foot { border-top: 1px solid rgba(214, 180, 110, .25); }
+:root .side-ad.tone-dark { background: linear-gradient(170deg, #1A1A1D 0%, #060607 75%); border-color: rgba(214, 180, 110, .35); }
+:root .side-ad.tone-light { background: linear-gradient(170deg, #1E1F23 0%, #2B2D33 100%); color: #ECECEE; border-color: rgba(201, 204, 211, .35); }
+:root .tone-dark .sa-hl, :root .sa-hl { color: #E2C383; }
+:root .ticket { border: 1px solid rgba(214, 180, 110, .3); }

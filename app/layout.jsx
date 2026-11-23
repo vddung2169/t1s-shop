@@ -6,7 +6,7 @@ import SideBanners from '@/components/SideBanners';
 import { SHOP } from '@/data/shop';
 
 export const metadata = {
-  title: { default: `${SHOP.name} – iPhone Lock, Quốc tế, iPad cũ tại TP.HCM`, template: `%s | ${SHOP.name}` },
+  title: { default: `T1s – iPhone Lock, Quốc tế, iPad cũ tại TP.HCM`, template: `%s | T1s` },
   description: `${SHOP.name}: iPhone Lock, iPhone Quốc tế, iPad cũ kiểm kỹ, giá rõ. Free ship toàn quốc, trả góp 0%, fix sim trọn đời. ${SHOP.address}. Hotline ${SHOP.phoneDisplay} – ${SHOP.phone2Display}.`,
   icons: { icon: '/logo.svg' },
 };
